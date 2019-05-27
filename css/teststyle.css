@@ -14,9 +14,16 @@ html {
   color: white;
 }
 
-.fa-angle-double-down {
-  color: white;
+i {
   font-size: 2em;
+}
+
+.icon-light {
+  color: white;
+}
+
+.icon-dark {
+  color: black;
 }
 
 /*
