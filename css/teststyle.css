@@ -1,0 +1,31 @@
+/* Test Site Styles */
+
+html {
+  scroll-behavior: smooth;
+}
+
+.bg-img {
+  background-image: url("/img/bg-img.jpg"); /* Add custom pic */
+  background-size: cover;
+  background-position: center top !important;
+}
+
+.text-light {
+  color: white;
+}
+
+.fa-angle-double-down {
+  color: white;
+  font-size: 2em;
+}
+
+/*
+  Bootstrap .container class interferes w/ printing on Safari v8.0
+  Following fix suggested by Bootstrap docs
+*/
+
+@media print {
+  .container {
+    width: auto;
+  }
+}
