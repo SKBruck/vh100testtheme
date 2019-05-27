@@ -4,6 +4,14 @@ html {
   scroll-behavior: smooth;
 }
 
+nav.navbar {
+	transition: top 0.5s ease;
+}
+
+.navbar-hide {
+  top: -100px;
+}
+
 .bg-img {
   background-image: url("../img/bg-img.jpg"); /* Add custom pic */
   background-size: cover;
