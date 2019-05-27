@@ -5,7 +5,7 @@ html {
 }
 
 .bg-img {
-  background-image: url("/img/bg-img.jpg"); /* Add custom pic */
+  background-image: url("../img/bg-img.jpg"); /* Add custom pic */
   background-size: cover;
   background-position: center top !important;
 }
