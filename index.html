@@ -74,10 +74,10 @@
               <img src="/vh100testtheme/img/filler-img.jpg" class="img-fluid img-thumbnail">
             </div>
             <div class="col-12 order-12">
-                <a href="#third" class="btn btn-round">
-                  <i class="fas fa-angle-double-down icon-sm icon-dark mt-4" title="icon name" aria-hidden="true"></i>
-                </a>
-              </div>
+              <a href="#third" class="btn btn-round">
+                <i class="fas fa-angle-double-down icon-sm icon-dark mt-4" title="icon name" aria-hidden="true"></i>
+              </a>
+            </div>
           </div>
         </div>
       </div>
@@ -99,10 +99,10 @@
               <img src="/vh100testtheme/img/filler-img.jpg" class="img-fluid img-thumbnail">
             </div>
             <div class="col-12 order-12">
-                <a href="#top" class="btn btn-round">
-                  <i class="fas fa-angle-double-up icon-sm icon-dark mt-4" title="icon name" aria-hidden="true"></i>
-                </a>
-              </div>
+              <a href="#top" class="btn btn-round">
+                <i class="fas fa-angle-double-up icon-sm icon-dark mt-4" title="icon name" aria-hidden="true"></i>
+              </a>
+            </div>
           </div>
         </div>
       </div>
@@ -120,32 +120,45 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
-    <!-- Cross-browser smooth-scrolling
     <script>
-    $(document).ready(function(){
-      // Add smooth scrolling to all links
-      $(".btn").on('click', function(event) {
+	    // scroll functions
+	    $(window).scroll(function(e) {
+      // add/remove class to navbar when scrolling to hide/show
+      var scroll = $(window).scrollTop();
+      if (scroll >= 615) {
+      $('.navbar').addClass("navbar-hide");
+      } else {
+      $('.navbar').removeClass("navbar-hide");
+      }
+	    });
+    </script>
 
-      // Make sure this.hash has a value before overriding default behavior
-      if (this.hash !== "") {
-        // Prevent default anchor click behavior
-        event.preventDefault();
+    <!-- Cross-browser smooth-scrolling
+         <script>
+           $(document).ready(function(){
+           // Add smooth scrolling to all links
+           $(".btn").on('click', function(event) {
 
-        // Store hash
-        var hash = this.hash;
+           // Make sure this.hash has a value before overriding default behavior
+           if (this.hash !== "") {
+           // Prevent default anchor click behavior
+           event.preventDefault();
 
-        // Using jQuery's animate() method to add smooth page scroll
-        $('html, body').animate({
-          scrollTop: $(hash).offset().top
-        }, 800, function(){
+           // Store hash
+           var hash = this.hash;
 
-          // Add hash (#) to URL when done scrolling (default click behavior)
-          window.location.hash = hash;
-        });
-       } // End if
-      });
-    });
-    </script> -->
+           // Using jQuery's animate() method to add smooth page scroll
+           $('html, body').animate({
+           scrollTop: $(hash).offset().top
+           }, 800, function(){
+
+           // Add hash (#) to URL when done scrolling (default click behavior)
+           window.location.hash = hash;
+           });
+           } // End if
+           });
+           });
+         </script> -->
 
   </body>
 </html>
