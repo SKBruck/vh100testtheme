@@ -14,8 +14,12 @@ html {
   color: white;
 }
 
-i {
+.icon-sm {
   font-size: 2em;
+}
+
+.icon-lg {
+  font-size: 5em;
 }
 
 .icon-light {
